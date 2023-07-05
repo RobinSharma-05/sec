@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+.relative {
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.circle {
+  border-radius: 74px;
+  transition: all 300ms linear;
+  top: 18%;
+  right: -10%;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 16px 0px rgba(255, 255, 255, 0.10);
+  width: 73px;
+  height: 74px;
+  opacity: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.relative:hover .circle {
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box:hover .circle {
+  top: -10%;
+  right: -10%;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 16px 0px rgba(255, 255, 255, 0.10);
+  width: 73px;
+  height: 74px;
+}
+
+.gap-40 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 100px;
+}
+
+.margin-left {
+  margin-left: 100px;
+}
+
+.box {
+  margin-top: 100px;
+  padding: 12px 12px;
+  /* backdrop-filter: blur(8px); */
+  transition: all 150ms linear;
+}
+
+.box:hover {
+  background: linear-gradient(to left bottom, transparent 1%, #343434 45%);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+.flex {
+  display: flex;
+}
+
+.circle:hover {
+  opacity: 1;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.bg-black-color {
+  min-height: 100vh;
+  background-color: #1E1E1E;
+}
+
+.text-white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mx-w-224 {
+  max-width: 224px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items-center {
+  align-items: center;
+}
+
+.gapp {
+  gap: 40px;
+}
+
+.h2 {
+  font-weight: 900;
+  font-size: 38px;
+  margin-top: 0;
+}
+
+.p2 {
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.last-p-color {
+  color: #A1A1A1;
+}
+
+.mx-w-290 {
+  max-width: 290px;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.border {
+  background: linear-gradient(to right bottom, #A657A3, #294D67);
+  max-width: 450px;
+  position: relative;
+  padding: 4px;
+  margin-top: 95px;
+  border-radius: 12px;
+}
+
+.bg-black {
+  background: #1E1E1E;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.bg-black:hover {
+  background: linear-gradient(to right bottom, #555555, #2C2C2C);
 }
